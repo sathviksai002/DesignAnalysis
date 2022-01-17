@@ -1,0 +1,47 @@
+Merge sorting is one of the optimal sorting techniques,
+in design analysis and algorithms. It is most commonly
+known as a Divide and Conquer algorithm(That divides and conquers the
+problem statement and gives optimal answer). 
+
+It breaks down the problem into the multiple subproblems
+recursively(calling its own function until the condition is reached)
+until they become simple to solve. 
+All the chunks of solutions are combined or merged in the end to
+solve the original problem i.e., Sorting. 
+
+The time complexity of the problem is O(n*log(n)) running time. 
+The space complexity is always O(n) including with arrays. The 
+contradiction everyone has if we draw the tree seems like O(nlogn)
+where the height of the tree is O(n*log(n)). However, this
+is the not the case in the actual code it does not execute in parallel mode. 
+For example:
+N=16
+              16
+             /
+            8
+           /
+          4
+         /
+        2
+       /
+      1
+
+It merges upwards again:
+Therefore, space complexity is always bounded by O(n), the height of the tree the space it takes.
+
+General Principle of merge sort:
+1. Split Array in half
+2. Call Merge sort on each half to sort them recursively
+3. Merge both sorted arrays into a single sorted array.
+---------------------------------------------------------------------------------------------------------------
+CODE EXPLANATION IN PYTHON:
+
+1. Use slicing operator from starting to mid as a left array.
+2. Use slicing operator from mid to end as the right array.
+3. Call it recursively until the len of the array becomes 1 to make it simple enough to solve. 
+4. Use indexes i , j , k. i to keep track of the left array left index, and j to keep track of right array left index, k to keep track of the merged same index.
+5. Use while loop from i to len of array and j to len of array to check whether the numbers in the left array is smaller than right array and vice versa.
+6. Use two other while loops to merge the remaining elements left in the array, this needs to be done when the while condition has done executing itself even if any of the condition fails.
+7. Merge all the arrays and you will have a final array. 
+
+<img src="https://www.google.com/search?q=merge+sort+tracking&sxsrf=AOaemvIVXnnpU5YJEdodzC49rUMD6M3adA:1642401981030&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjo76CVmLj1AhUpzTgGHbH9DiQQ_AUoAnoECAEQBA&biw=1536&bih=735&dpr=1.25#imgrc=zzRgVr8vUFZBGM" width="350" title="hover text">
