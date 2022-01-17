@@ -44,4 +44,4 @@ CODE EXPLANATION IN PYTHON:
 6. Use two other while loops to merge the remaining elements left in the array, this needs to be done when the while condition has done executing itself even if any of the condition fails.
 7. Merge all the arrays and you will have a final array. 
 
-<img src="https://www.google.com/search?q=merge+sort+tracking&sxsrf=AOaemvIVXnnpU5YJEdodzC49rUMD6M3adA:1642401981030&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjo76CVmLj1AhUpzTgGHbH9DiQQ_AUoAnoECAEQBA&biw=1536&bih=735&dpr=1.25#imgrc=zzRgVr8vUFZBGM" width="350" title="hover text">
+
